@@ -1,8 +1,3 @@
-def add(a, b):
-    return a+b
+from package import m1
 
-def mul(a, b):
-    return a*b
-
-def min(a, b):
-    return a-b
+print(m1.hi("Nathan"))
