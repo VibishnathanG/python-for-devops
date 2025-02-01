@@ -130,3 +130,120 @@ a= range(11,19)
 
 
 # print(twoSum([2,8,11,7], 9))
+
+
+
+#Eception Handling
+
+# b=20
+# try:
+#     c= int(input("Enter: "))
+#     d=b/c
+
+# except ValueError:
+#     print("C must be int")
+
+# except ZeroDivisionError:
+#     print("C shouldnt be 0")
+
+# else:
+#     print(d)
+
+# finally:
+#     print("Finally is executed")
+
+
+# class nameisvibi(Exception):
+#     def __init__(self, message="Sorry, the name 'vibi' is not allowed."):
+#         super().__init__(message)
+    
+# def greet(name: str):
+#     if not name.isalpha():
+#         raise ValueError("Please enter a valid name only alphabets")
+#     else:
+#         print(f"Hi {name} welcome !!!")
+
+#     if name=="vibi":
+#         raise nameisvibi("Shit he is vibi")
+
+
+# while True:
+#     n=input("Enter Name: ")
+#     try:
+#         greet(n)
+
+#     except ValueError as e:
+#         print(e)
+
+#     except nameisvibi as ee:
+#         print(ee)
+
+# try:
+#     with open("/mnt/e/Study/Self/devops/Python/Git/python-for-devops/Test_script/sample.txt", "r") as file:
+#         content= file.read()
+# except IOError or FileNotFoundError:
+#     print("Error not able to read")
+# else:
+#     print(content)
+
+# Operator Overriding
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+#     def __add__(self, o):
+#         print(self.x + o.x ,self.y + o.y)
+#         return Point(self.x + o.x, self.y + o.y)
+    
+#     def __str__(self) -> str:
+#         return f"{self.x, self.y}"
+
+# p1=Point(1,2)
+# p2=Point(2,3)
+
+# print(p1+p2)
+
+# class test:
+#     def __init__(self, x):
+#         self.x = x
+
+#     # def pri(self):
+#     #     return test(x="HI VIbish")
+    
+#     def __str__(self, y) -> str:
+#         return self.x+y
+
+
+# aa=test("Jack")
+
+# print(aa.__str__("timmy"))
+
+
+# def fibonacci_sequence(n):
+#     a, b = 0, 1
+#     count = 0
+#     while count < n:
+#         yield a  # Yield the current Fibonacci number
+#         a, b = b, a + b
+#         count += 1
+
+# # Using the generator to print the first 10 Fibonacci numbers
+# fib_gen = fibonacci_sequence(10)
+# for num in fib_gen:
+#     print(num)
+
+
+# try:
+#     a=iter(a)
+#     while True:
+#         print(next(a))
+    
+# except StopIteration:
+#     pass
+
+b=[1,2,3,4]
+
+print(b.pop())
+print(b)
